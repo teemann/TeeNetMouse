@@ -1,4 +1,5 @@
 project(TeeNetMouse)
 cmake_minimum_required(VERSION 2.8)
-
+find_package(glib-2.0)
 add_executable(TeeNetMouse main.c)
+target_link_libraries(TeeNetMouse ${gio})
